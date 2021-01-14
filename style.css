@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+html,body {
+width:100vw;
+height: 100vh;
+margin: 0;
+font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+color: #000;
+}
+h1 {
+color: #000;
+}
+a { 
+color: #FC3C3C;
+text-decoration: none;
+font-family: 'Source Sans Pro', sans-serif;
+}
+button {
+border: 3px solid#FFF;
+padding: .375rem .75rem;
+line-height: 1.5;
+border-radius: 1.35rem;
+background-color:#072247;
+color: #FFF;
+}
+.owo {
+text-align: center;
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: #0074E4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    font-family: 'Source Sans Pro', monospace;
+  }
+  .close {
+    color: #FC3C3C;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #dae0e2;
+    text-decoration: none;
+    cursor: pointer;
+  }
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('https://cdn.discordapp.com/attachments/781249957969002508/794633699777839114/unknown.png');
+        background-size: cover;
+    }
+}
